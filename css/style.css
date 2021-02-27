@@ -45,8 +45,9 @@ html, body {
 }
 
 body {
-  background: #000000ab;
-  color: rgb(9, 52, 247);
+  background: #eeeaea;
+  box-shadow: 10px 10px 10px 10px hotpink;
+  color: rgb(251, 255, 7);
   line-height: 1.3;
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -72,8 +73,8 @@ h2 {
   font-weight: 120;
   color: #fffb00;
   letter-spacing: 0.05em;
-  -webkit-text-stroke: 2px #ff00b3;
-  text-shadow: 1px 0px 10px 10px hotpink;
+  -webkit-text-stroke: 2px #fad4ef;
+  text-shadow: 1px 10px 10px 10px hotpink;
   font-family: 'Roboto', sans-serif;
 }
 h1::after {
