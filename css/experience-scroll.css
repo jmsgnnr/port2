@@ -1,0 +1,22 @@
+
+/* Retain the original timeline while showing the newest role at first glance. */
+.timeline-scroll {
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: var(--pink) transparent;
+  scrollbar-gutter: stable;
+  max-height: 14rem;
+  overscroll-behavior: contain;
+}
+.timeline-scroll:focus-visible {
+  outline: 2px solid var(--pink);
+  outline-offset: 4px;
+}
+.timeline-scroll__hint {
+  margin: 0.45rem 0 0 0.75rem;
+  color: var(--pink);
+  font-family: var(--font-mono);
+  font-size: 0.73rem;
+  letter-spacing: 0.075em;
+}

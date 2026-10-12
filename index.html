@@ -12,11 +12,13 @@
   <meta property="og:description" content="Infrastructure first. AWS, networking, platforms, automation and security. A retro portfolio built without trackers.">
   <link rel="stylesheet" href="css/avatar.css">
   <link rel="stylesheet" href="css/back-to-top.css">
+  <link rel="stylesheet" href="css/experience-scroll.css">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="alternate icon" type="image/png" href="assets/favicon11.png">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/jquery.particleground.js" defer></script>
   <script src="js/demo.js" defer></script>
+  <script src="js/experience-scroll.js" defer></script>
 </head>
 
 <body>
@@ -86,6 +88,7 @@
 
     <section id="experience" class="panel" aria-labelledby="experience-title">
       <h2 id="experience-title" class="panel__title"><span class="prompt" aria-hidden="true">C:\&gt;</span> experience.log</h2>
+      <div class="timeline-scroll" id="experience-scroll" tabindex="0" role="region" aria-label="Experience history, scroll to see earlier roles">
       <ol class="timeline">
         <li class="job">
           <div class="job__head">
@@ -105,13 +108,15 @@
         </li>
         <li class="job">
           <div class="job__head">
-            <h3 class="job__title">Software Engineer</h3>
+            <h3 class="job__title">Web Developer I</h3>
             <p class="job__org">On Beat Digital</p>
             <p class="job__dates"><time datetime="2021">2021</time> to <time datetime="2022">2022</time></p>
           </div>
           <p>Built web applications and analytics interfaces, plus Python and AWS Lambda integrations for API-driven reporting.</p>
         </li>
       </ol>
+      </div>
+      <p class="timeline-scroll__hint">SCROLL FOR EARLIER ROLES &#8595;</p>
     </section>
 
     <section id="stack" class="panel" aria-labelledby="stack-title">
