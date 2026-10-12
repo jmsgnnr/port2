@@ -463,6 +463,25 @@ main:focus {
   gap: 0.4rem;
 }
 
+.project__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.2rem;
+  margin-top: auto;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+}
+
+.project__links a {
+  color: var(--pink);
+  text-underline-offset: 0.2em;
+}
+
+.project__links a:hover,
+.project__links a:focus-visible {
+  color: var(--yellow);
+}
+
 .chip--status {
   color: var(--black);
   background: var(--pink);
