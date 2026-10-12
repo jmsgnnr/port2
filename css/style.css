@@ -626,3 +626,6 @@ main:focus {
     min-height: auto;
   }
 }
+
+/* Retro profile avatar */
+.hero__avatar { display: block; width: clamp(88px,12vw,128px); height: auto; aspect-ratio: 1; object-fit: cover; margin: 0 auto 1rem; border-radius: 50%; border: 2px solid #e8dc39; box-shadow: 0 0 0 3px #000, 0 0 18px rgba(255,0,172,.55); }
