@@ -78,13 +78,15 @@
         resizeHandler();
       }, false);
 
+      // Local patch: client coords, since the canvas is a fixed layer and the page scrolls.
       document.addEventListener('mousemove', function(e) {
-        mouseX = e.pageX;
-        mouseY = e.pageY;
+        mouseX = e.clientX;
+        mouseY = e.clientY;
       }, false);
 
       if (orientationSupport && !desktop) {
-        window.addEventListener('deviceorientation', function () {
+        // Local patch: use the listener's event rather than the non-standard global.
+        window.addEventListener('deviceorientation', function (event) {
           // Contrain tilt range to [-30,30]
           tiltY = Math.min(Math.max(-event.beta, -30), 30);
           tiltX = Math.min(Math.max(-event.gamma, -30), 30);
@@ -165,6 +167,9 @@
       for (i = particles.length - 1; i >= 0; i--) {
         particles[i].setStackPos(i);
       };
+
+      // Local patch: resizing clears the canvas, so repaint once while paused.
+      if (paused) { draw(); }
     }
 
     /**
@@ -179,6 +184,8 @@
      */
     function start() {
       paused = false;
+      // Local patch: avoid stacking two animation loops on a quick pause/start.
+      cancelAnimationFrame(raf);
       draw();
     }
 

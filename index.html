@@ -1,38 +1,198 @@
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="en">
 <head>
-  <base target="_blank">
-  <meta charset="UTF-8" />
-  <title>James Gunner Potee</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" type="text/css">
-  <script type="text/javascript" src="js/jquery.particleground.js"></script>
-  <script type="text/javascript" src="js/demo.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>James G. Potee — Infrastructure, Platforms, Security &amp; Networking</title>
+  <meta name="description" content="James G. Potee: Cloud &amp; Infrastructure Engineer working across AWS, IAM, Terraform, Python and CI/CD, where infrastructure and security meet. A static, retro, tracker-free portfolio.">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#000000">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="James G. Potee — Infrastructure, Platforms, Security &amp; Networking">
+  <meta property="og:description" content="AWS, IAM, Terraform, Python and the space between infra and security. Hand-built in the finest 1999 tradition.">
+  <link rel="stylesheet" href="css/avatar.css">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="alternate icon" type="image/png" href="assets/favicon11.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery.particleground.js" defer></script>
+  <script src="js/demo.js" defer></script>
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<div id="particles">
-  <div id="intro">
-      <h2 style="font-family: 'Krona One', sans-serif; font-weight: 20;">James G. Potee&nbsp</h2>
-      <h3 style="font-family: 'Krona One', sans-serif; font-weight: 20;">Web developer / Mixed Media Artist </h3>
-        <hr style="width: 50%; background-color: #f7ff88; border-color: #000000;">
-        <!-- <div className="dogBack"><img src="assets/favicon.png" width="200" height="200"><div> -->
-    <a href="https://www.linkedin.com/in/#/" style="color: rgb(34, 148, 255);"><i class="fab fa-linkedin" style="font-size: 2em;"></i></a>
-    &nbsp
-    <a href="https://www.instagram.com/gunnercodes/" style="color: rgb(4, 202, 37);"><i class="fab fa-instagram" style="font-size: 2em;"></i></a>
-    &nbsp
-    <a href="https://github.com/jmsgnnr" style="color: rgb(239, 255, 15);"><i class="fab fa-github" style="font-size: 2em;"></i></a>
-    &nbsp
-    <a href="https://docs.google.com/document/d/e/2PACX-1vRwTIe3p-JV2nVV2L8uCij4tJuCKXYzPjPWCRiBmW945LRdC27awA6XqCq39TxFcA/pub" style="color: rgb(255, 10, 182);"><i class="fas fa-paw" style="font-size: 2em;"></i></a>
-    &nbsp
+  <!-- Decorative particle background; demo.js mounts the canvas here. -->
+  <div id="particles" aria-hidden="true"></div>
 
-    
-  </div>
-</div>
+  <header class="site-header">
+    <a class="logo" href="#top" aria-label="James G. Potee, back to top">JGP<span aria-hidden="true">_</span></a>
+    <nav aria-label="Primary">
+      <ul class="nav-list">
+        <li><a href="#about">about</a></li>
+        <li><a href="#experience">experience</a></li>
+        <li><a href="#stack">stack</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+    </nav>
+    <button type="button" class="motion-toggle" id="motion-toggle" aria-pressed="false" hidden>
+      <span class="motion-toggle__label">pause particles</span>
+    </button>
+  </header>
 
+  <main id="main" tabindex="-1">
+    <section id="top" class="hero" aria-labelledby="hero-title">
+      <img class="hero__avatar" src="assets/avatar.svg" width="112" height="112" alt="Retro illustrated avatar of James with a side-cut hairstyle">
+      <p class="hero__kicker">Welcome to my homepage!!1</p>
+      <h1 id="hero-title" class="hero__name">James G. Potee</h1>
+      <p class="hero__role">Infrastructure <span class="hero__role-sep" aria-hidden="true">//</span> Platforms <span class="hero__role-sep" aria-hidden="true">//</span> Security <span class="hero__role-sep" aria-hidden="true">//</span> Networking</p>
+      <hr class="rainbow-rule">
+      <p class="hero__tagline">
+        I build infrastructure and platforms, connect networks, and make the whole thing harder to break into.
+        Identity, logging, networks, automation &mdash; the unglamorous plumbing
+        that decides whether an incident is a footnote or a headline.
+      </p>
+      <ul class="hero__links" aria-label="Elsewhere on the internet">
+        <li>
+          <a class="icon-link icon-link--github" href="https://github.com/jmsgnnr">
+            <svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" width="28" height="28"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+            <span>GitHub</span>
+          </a>
+        </li>
+      </ul>
+      <p class="construction"><span aria-hidden="true">&#x1F6A7;</span> This page is permanently under construction. That's a feature. <span aria-hidden="true">&#x1F6A7;</span></p>
+    </section>
+
+    <section id="about" class="panel" aria-labelledby="about-title">
+      <h2 id="about-title" class="panel__title"><span class="prompt" aria-hidden="true">C:\&gt;</span> whoami</h2>
+      <p>
+        I'm a cloud and infrastructure engineer who drifted, entirely on purpose, into security.
+        My favourite work sits right on the seam between the two: the people building infrastructure
+        want to ship, the people securing it want guardrails, and someone has to speak both dialects
+        fluently enough to make the secure path the easy one.
+      </p>
+      <p>
+        Day to day that means AWS accounts and the identity model around them, networks that are
+        boring in the best way, audit trails you can actually query, and automation &mdash; Terraform,
+        Python, PowerShell, pipelines &mdash; so nobody has to click through the console at 2&nbsp;a.m.
+      </p>
+      <p class="aside">
+        Yes, a security engineer built a website that looks like this. No, there are no trackers on it.
+        The two facts are related.
+      </p>
+    </section>
+
+    <section id="experience" class="panel" aria-labelledby="experience-title">
+      <h2 id="experience-title" class="panel__title"><span class="prompt" aria-hidden="true">C:\&gt;</span> experience.log</h2>
+      <ol class="timeline">
+        <li class="job">
+          <div class="job__head">
+            <h3 class="job__title">Systems Engineer IV <span class="job__qualifier">(Contract)</span></h3>
+            <p class="job__org">The Select Group, assigned to Charter Communications</p>
+            <p class="job__dates"><time datetime="2023">2023</time> &ndash; <time datetime="2026">2026</time></p>
+          </div>
+          <p>Contract systems engineering on assignment at Charter.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="stack" class="panel" aria-labelledby="stack-title">
+      <h2 id="stack-title" class="panel__title"><span class="prompt" aria-hidden="true">C:\&gt;</span> dir /stack</h2>
+      <div class="stack-grid">
+        <div class="stack-group">
+          <h3>AWS</h3>
+          <ul class="tag-list">
+            <li>IAM &amp; Identity Center</li>
+            <li>EC2 &amp; Systems Manager</li>
+            <li>Route&nbsp;53</li>
+            <li>VPC &amp; Transit Gateway</li>
+            <li>CloudTrail &amp; Config</li>
+            <li>EKS</li>
+          </ul>
+        </div>
+        <div class="stack-group">
+          <h3>Security</h3>
+          <ul class="tag-list">
+            <li>Cloud security</li>
+            <li>Identity &amp; access design</li>
+            <li>Audit logging &amp; config compliance</li>
+            <li>Bridging infra &amp; security teams</li>
+          </ul>
+        </div>
+        <div class="stack-group">
+          <h3>Automation &amp; IaC</h3>
+          <ul class="tag-list">
+            <li>Terraform</li>
+            <li>Python / boto3</li>
+            <li>PowerShell</li>
+            <li>GitLab CI/CD</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="panel" aria-labelledby="projects-title">
+      <h2 id="projects-title" class="panel__title"><span class="prompt" aria-hidden="true">C:\&gt;</span> projects</h2>
+      <div class="project-grid">
+        <article class="project">
+          <h3 class="project__title">Internal AWS Management Platform</h3>
+          <p class="project__meta"><span class="chip">Next.js / React</span> <span class="chip">TypeScript</span> <span class="chip">AWS</span> <span class="chip">Identity &amp; Networking</span></p>
+          <p>
+            Primary frontend contributor to a production internal cloud management platform.
+            Built interfaces for AWS account administration, IP address management, role-based
+            access, identity assignments, and infrastructure governance.
+          </p>
+          <p class="disclaimer"><strong>Fine print:</strong> internal platform; no public source code or proprietary details.</p>
+        </article>
+        <article class="project">
+          <h3 class="project__title">Cloud Identity &amp; Security Automation</h3>
+          <p class="project__meta"><span class="chip">Python</span> <span class="chip">AWS IAM</span> <span class="chip">Lambda</span> <span class="chip">CloudFormation</span></p>
+          <p>
+            Developed cross-account IAM access-key monitoring and notification automation,
+            using AWS account discovery and scheduled checks to support recurring security hygiene.
+          </p>
+        </article>
+        <article class="project">
+          <h3 class="project__title">AWS Identity Self-Service</h3>
+          <p class="project__meta"><span class="chip">Python</span> <span class="chip">Django / React</span> <span class="chip">AWS Identity Center</span></p>
+          <p>
+            Built self-service interfaces and bulk-operation tooling for users, groups,
+            permission sets, and account access, with validation and dry-run safeguards.
+          </p>
+        </article>
+        <article class="project">
+          <h3 class="project__title">Network Provenance Research</h3>
+          <p class="project__meta"><span class="chip">Go</span> <span class="chip chip--status">status: exploratory</span></p>
+          <p>Exploring what network traffic can and cannot reveal about the path a connection takes. Research, not a detection guarantee.</p>
+        </article>
+        <article class="project">
+          <h3 class="project__title">This Website</h3>
+          <p class="project__meta"><span class="chip">HTML</span> <span class="chip">CSS</span> <span class="chip">JavaScript</span></p>
+          <p>Static files, no build step, no framework, no analytics, no cookies. The particles are <a href="https://github.com/jnicol/particleground">particleground</a>, kept from the original version because some things are sacred.</p>
+        </article>
+      </div>    </section>
+
+    <section id="contact" class="panel panel--contact" aria-labelledby="contact-title">
+      <h2 id="contact-title" class="panel__title"><span class="prompt" aria-hidden="true">C:\&gt;</span> contact</h2>
+      <p>Find the code, send a note, or request my résumé.</p>
+      <ul class="contact-list">
+        <li><a href="https://github.com/jmsgnnr">GitHub</a></li>
+        <li><a href="mailto:jamespotee@gmail.com">Email</a></li>
+        <li><a href="assets/James_Potee_Resume.pdf" download="James_Potee_Resume.pdf">Download résumé</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <ul class="badges" aria-label="Site facts">
+      <li class="badge88">NO ANALYTICS</li>
+      <li class="badge88 badge88--pink">NO COOKIES</li>
+      <li class="badge88">STATIC HTML</li>
+      <li class="badge88 badge88--pink">KEYBOARD OK</li>
+    </ul>
+    <p>Visitor counter: <span class="counter">not counted, on purpose</span></p>
+    <p>Best viewed in any browser, at any size, with any input device.</p>
+    <p>&copy; 2026 James G. Potee. Particle background by <a href="https://github.com/jnicol/particleground">particleground</a> (MIT).</p>
+  </footer>
 </body>
 </html>
-
